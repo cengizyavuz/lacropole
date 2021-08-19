@@ -67,6 +67,9 @@ Route::prefix('admin')->name('admin.')->middleware('isAdmin')->group(function(){
 /*  front routes */
 
 Route::get('/', [homeController::class, 'periodControl'])->name('period.control');
+Route::get('{period}/download/{issue}', [homeController::class, 'getDowload'])->name('download');
+Route::get('{period}/iletisim', [homeController::class, 'contact'])->name('contact');
+Route::post('iletisim', [homeController::class, 'contactPost'])->name('contact.post');
 Route::get('/{period}', [homeController::class, 'home'])->name('home');
 Route::get('/{period}/{slug}', [homeController::class, 'post'])->name('post');
 

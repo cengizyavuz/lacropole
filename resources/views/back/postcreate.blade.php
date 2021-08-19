@@ -85,8 +85,10 @@
             <div style="clear:both"></div>
         </div>
         
+        <div><input class="form-input" name="image_info" placeholder="Görsel hakkında yazınız..." ></div>
+        
         <div><textarea id="editor" class="form-input" name="content"></textarea></div>
-        <div><button type="submit" class="form-btn">Kaydet</button>
+        <div><button type="submit" class="form-btn">Kaydet</button></div>
         </form>  
     </div>
     <!-- /.page-content-->

@@ -4,7 +4,7 @@
 
 <div id="page-content">
  <div id="page-title">
-        <div class="page-title">Makale İşlemleri</div>
+        <div class="page-title">Makale İşlemleri <span style="font-size:12px; font-family:Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif">({{count($posts)}} adet makale bulundu)</span></div>
         <div class="title-right" align="right">
         	<a href="{{route('admin.post.deleted')}}" class="nav">
         	<img src="{{asset('img')}}/trash.png" width="24" title="Silinen Makaleler">

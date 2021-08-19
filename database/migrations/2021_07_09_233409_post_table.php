@@ -21,8 +21,9 @@ class PostTable extends Migration
 			$table->integer('category');
 			$table->string('title');
 			$table->string('slug');
-			$table->string('spot')->nullable();;
-			$table->string('image')->nullable();;
+			$table->string('spot')->nullable();
+			$table->string('image')->nullable();
+			$table->string('image_info')->nullable();
 			$table->integer('hit')->default(100);
 			$table->integer('headline')->default(0);
 			$table->integer('painter')->nullable();

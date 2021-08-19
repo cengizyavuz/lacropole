@@ -52,6 +52,7 @@ class adminController extends Controller
 			$imageName = Str::slug($request->title) . '.' . $request->image->getClientOriginalExtension();
 			$request->image->move(public_path('media/images'), $imageName);
 			$post->image = $imageName;
+			$post->image_info = $request->image_info;
 		}
 		$post->save();
 		$posts = Post::orderBy('created_at', 'DESC')->get();
@@ -82,6 +83,7 @@ class adminController extends Controller
 		$post->painter = $request->painter;
 		$post->status = $request->status;
 		$post->content = $request->content;
+		$post->image_info = $request->image_info;
 		
 		if($request->hasFile('image')){
 			$image = 'media/images/' . $post->image;
