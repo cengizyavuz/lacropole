@@ -1,2 +1,2 @@
 # lacropole
- Antik gazete. Mitolojinin gazete haberleri şeklinde anlatılması ve görsel olarak da vazo ressamlarının resimlerinin kullanılması. 
+Mitolojiyi vazo ressamlarının resimlerinden faydalanarak bir gazete haberi şeklinde aktaran web sitesi. 
